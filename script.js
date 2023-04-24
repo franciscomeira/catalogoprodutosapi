@@ -14,7 +14,7 @@ productsPromise.then((resp) => {
 
 function rendertable(products) {
   let rows = products.map((product) => {
-    return `<tr><td>${product.id}</td<td>${product.name}</td></tr>`;
+    return `<tr><td>${product.id}</td><td>${product.name}</td> <td>${product.price}</td>  </tr>`;
   });
-  return `<table>${rows.join()}</table>`;
+  return `<table>${rows.join("")}</table>`;
 }
