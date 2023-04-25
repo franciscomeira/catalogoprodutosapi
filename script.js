@@ -1,9 +1,11 @@
-//http://makeup-api.herokuapp.com/api/v1/products.json
+//Link: http://makeup-api.herokuapp.com/api/v1/products.json
+//Declaração de variaveis
 
 let productsPromise = fetch(
   "http://makeup-api.herokuapp.com/api/v1/products.json"
 );
 //
+
 productsPromise.then((resp) => {
   resp.json().then((products) => {
     // console.log(products);
